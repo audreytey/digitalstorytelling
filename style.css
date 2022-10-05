@@ -1,0 +1,44 @@
+body {
+  background-color:black; /* background color */
+}
+
+/*if you ever have 2 styling instructions for the same block, the latter will take precedence*/
+/*Inspect Element in browser: right click on browser and press inspect element. you can edit the html and css there and it will show on the browser, but it won't save.
+good for trial and error*/
+
+h1 {
+  color:blue;
+  font-family:helvetica;
+  background-color: pink; /* background color within border */
+  border: 5px solid red;
+  padding: 50px /* padding = space between content and its borders; content will be same size and borders will be larger */
+}
+
+p {
+  color:pink;
+  background-color: blue; /* background color within border (even when there is no border)*/
+}
+
+h3 {
+  color:purple;
+  background-color: white
+}
+
+img {
+  border: 5px solid fuchsia; /* border for images */
+  width:25%; /* size of images */
+  height:25%; /* size of images */
+  margin-left: 100px /* margin to left of each image */
+
+}
+
+#highlight { /* this CSS will apply for all paragraphs with the same ID tag, and will overwrite the general CSS for that type of text e.g. h1 */
+  color: orange;
+  background-color: green;
+  border: 3px dotted green;
+}
+
+.top { /* this CSS will apply for all content inside the <div></div> tags with the class = "top" */
+  background-color: red;
+  float: left; /* if you apply a float to an element, it’ll attempt to move in that direction, pushing all of its neighbors to the side */
+}
